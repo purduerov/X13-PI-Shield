@@ -8310,6 +8310,75 @@ More information and support community is available at http://www.element14.com/
 </deviceset>
 </devicesets>
 </library>
+<library name="usb conn">
+<packages>
+<package name="MICRO-USB">
+<smd name="SHLD@1" x="-1.125" y="0" dx="1.9" dy="1.75" layer="1" rot="R90"/>
+<smd name="SHLD@2" x="1.125" y="0" dx="1.9" dy="1.75" layer="1" rot="R90"/>
+<pad name="SHLD@3" x="-3.575" y="0" drill="0.95" diameter="1.6"/>
+<pad name="SHLD@4" x="3.575" y="0" drill="0.95" diameter="1.6"/>
+<smd name="SHLD@5" x="-2.5" y="2.23" dx="1.45" dy="1.15" layer="1" rot="R90"/>
+<smd name="1" x="-1.3" y="2.65" dx="0.4" dy="1.4" layer="1"/>
+<smd name="2" x="-0.65" y="2.65" dx="0.4" dy="1.4" layer="1"/>
+<smd name="3" x="0" y="2.65" dx="0.4" dy="1.4" layer="1"/>
+<smd name="4" x="0.65" y="2.65" dx="0.4" dy="1.4" layer="1"/>
+<smd name="5" x="1.3" y="2.65" dx="0.4" dy="1.4" layer="1"/>
+<smd name="SHLD@6" x="2.5" y="2.23" dx="1.45" dy="1.15" layer="1" rot="R90"/>
+<wire x1="-3.8" y1="3.2" x2="-1.6" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="3.2" x2="-3.8" y2="1" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-1" x2="-3.8" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-2.4" x2="3.8" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="3.8" y1="-2.4" x2="3.8" y2="-1" width="0.127" layer="21"/>
+<wire x1="3.8" y1="1" x2="3.8" y2="3.2" width="0.127" layer="21"/>
+<wire x1="3.8" y1="3.2" x2="1.6" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="3" x2="-3.6" y2="3" width="0.127" layer="39"/>
+<wire x1="-3.6" y1="3" x2="-3.6" y2="1" width="0.127" layer="39"/>
+<wire x1="-3.6" y1="-1" x2="-3.6" y2="-2.2" width="0.127" layer="39"/>
+<wire x1="-3.6" y1="-2.2" x2="3.6" y2="-2.2" width="0.127" layer="39"/>
+<wire x1="3.6" y1="-2.2" x2="3.6" y2="-1" width="0.127" layer="39"/>
+<wire x1="3.6" y1="1" x2="3.6" y2="3" width="0.127" layer="39"/>
+<wire x1="3.6" y1="3" x2="1.6" y2="3" width="0.127" layer="39"/>
+<text x="-3.302" y="-2.032" size="0.508" layer="21">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="USBCONN-ID">
+<pin name="D+" x="-7.62" y="-2.54" length="middle"/>
+<pin name="D-" x="-7.62" y="-5.08" length="middle"/>
+<pin name="ID" x="-7.62" y="-7.62" length="middle"/>
+<pin name="VCC" x="5.08" y="7.62" length="middle" rot="R270"/>
+<pin name="GND" x="5.08" y="-17.78" length="middle" rot="R90"/>
+<wire x1="-2.54" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-12.7" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<pin name="SHLD" x="7.62" y="-17.78" length="middle" rot="R90"/>
+<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USB-MICRO">
+<gates>
+<gate name="G$1" symbol="USBCONN-ID" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MICRO-USB">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="ID" pad="4"/>
+<connect gate="G$1" pin="SHLD" pad="SHLD@1 SHLD@2 SHLD@3 SHLD@4 SHLD@5 SHLD@6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8433,6 +8502,7 @@ More information and support community is available at http://www.element14.com/
 <part name="U$4" library="Adafruit IMUs - BNO055 and FX" deviceset="ADAFRUIT-FXOS8700-FXAS21002" device=""/>
 <part name="U$5" library="Adafruit IMUs - BNO055 and FX" deviceset="ADAFRUIT-BNO055" device=""/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$3" library="usb conn" deviceset="USB-MICRO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8958,15 +9028,15 @@ Do not populate R3</text>
 </sheet>
 <sheet>
 <plain>
-<text x="210.82" y="53.34" size="1.778" layer="91">Connectors to measure signals</text>
+<text x="218.44" y="48.26" size="1.778" layer="91">Connectors to measure signals</text>
 <text x="134.62" y="111.76" size="1.778" layer="91">Temperature Sensor Connector</text>
 <text x="134.62" y="83.82" size="1.778" layer="91">Pressure Sensor Connector</text>
 <text x="134.62" y="58.42" size="1.778" layer="91">Potential pH Sensor Connector</text>
 <text x="193.04" y="160.02" size="1.778" layer="91">BNO055 IMU</text>
 <text x="175.26" y="106.68" size="1.778" layer="91">Power Supply Connectors</text>
-<text x="215.9" y="76.2" size="1.778" layer="91">Possible Additional Sensor</text>
+<text x="226.06" y="76.2" size="1.778" layer="91">Possible Additional Sensor</text>
 <text x="129.54" y="27.94" size="1.778" layer="91">UART Communication Header Pins</text>
-<text x="182.88" y="71.12" size="1.778" layer="91">Servo Connector</text>
+<text x="210.82" y="68.58" size="1.778" layer="91">Servo Connector</text>
 <text x="76.2" y="63.5" size="1.778" layer="91" rot="R90">We will be using Pi 4, not Pi 2</text>
 <text x="50.8" y="121.92" size="1.778" layer="91" rot="R180">DO NOT use pin 28 or 27
  these are for EEPROM</text>
@@ -9014,16 +9084,16 @@ to change address from
 <attribute name="VALUE" x="231.14" y="33.274" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="231.14" y="43.688" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND3" gate="1" x="195.58" y="83.82" smashed="yes">
-<attribute name="VALUE" x="193.04" y="81.28" size="1.778" layer="96"/>
+<instance part="GND3" gate="1" x="195.58" y="71.12" smashed="yes">
+<attribute name="VALUE" x="193.04" y="68.58" size="1.778" layer="96"/>
 </instance>
 <instance part="C13" gate="G$1" x="238.76" y="152.4" smashed="yes">
 <attribute name="NAME" x="240.284" y="155.321" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="240.284" y="150.241" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="J1" gate="G$1" x="220.98" y="66.04" smashed="yes">
-<attribute name="VALUE" x="215.9" y="58.674" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="215.9" y="74.168" size="1.778" layer="95" font="vector"/>
+<instance part="J1" gate="G$1" x="236.22" y="66.04" smashed="yes">
+<attribute name="VALUE" x="231.14" y="58.674" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="231.14" y="74.168" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J8" gate="J$1" x="134.62" y="17.78" smashed="yes">
 <attribute name="VALUE" x="132.08" y="10.414" size="1.778" layer="96" font="vector"/>
@@ -9069,8 +9139,8 @@ to change address from
 <instance part="GND25" gate="1" x="218.44" y="30.48" smashed="yes">
 <attribute name="VALUE" x="215.9" y="27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="GND26" gate="1" x="228.6" y="60.96" smashed="yes">
-<attribute name="VALUE" x="226.06" y="58.42" size="1.778" layer="96"/>
+<instance part="GND26" gate="1" x="243.84" y="60.96" smashed="yes">
+<attribute name="VALUE" x="241.3" y="58.42" size="1.778" layer="96"/>
 </instance>
 <instance part="GND27" gate="1" x="215.9" y="116.84" smashed="yes">
 <attribute name="VALUE" x="213.36" y="114.3" size="1.778" layer="96"/>
@@ -9078,8 +9148,8 @@ to change address from
 <instance part="GND29" gate="1" x="144.78" y="10.16" smashed="yes">
 <attribute name="VALUE" x="142.24" y="7.62" size="1.778" layer="96"/>
 </instance>
-<instance part="GND23" gate="1" x="185.42" y="55.88" smashed="yes">
-<attribute name="VALUE" x="182.88" y="53.34" size="1.778" layer="96"/>
+<instance part="GND23" gate="1" x="213.36" y="53.34" smashed="yes">
+<attribute name="VALUE" x="210.82" y="50.8" size="1.778" layer="96"/>
 </instance>
 <instance part="R18" gate="G$1" x="226.06" y="106.68" smashed="yes" rot="MR0">
 <attribute name="NAME" x="226.06" y="108.204" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
@@ -9092,9 +9162,9 @@ to change address from
 <instance part="J16" gate="&gt;NAME" x="177.8" y="99.06" smashed="yes">
 <attribute name="NAME" x="182.88" y="101.6" size="1.27" layer="95" rot="MR0"/>
 </instance>
-<instance part="J9" gate="J$1" x="195.58" y="63.5" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="198.12" y="56.134" size="1.778" layer="96" font="vector" rot="MR0"/>
-<attribute name="NAME" x="198.12" y="69.088" size="1.778" layer="95" font="vector" rot="MR0"/>
+<instance part="J9" gate="J$1" x="223.52" y="60.96" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="226.06" y="53.594" size="1.778" layer="96" font="vector" rot="MR0"/>
+<attribute name="NAME" x="226.06" y="66.548" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
 <instance part="C7" gate="G$1" x="233.68" y="93.98" smashed="yes">
 <attribute name="NAME" x="234.696" y="94.615" size="1.778" layer="95"/>
@@ -9118,6 +9188,9 @@ to change address from
 </instance>
 <instance part="GND31" gate="1" x="152.4" y="124.46" smashed="yes">
 <attribute name="VALUE" x="149.86" y="121.92" size="1.778" layer="96"/>
+</instance>
+<instance part="U$3" gate="G$1" x="205.74" y="96.52" smashed="yes">
+<attribute name="NAME" x="203.2" y="99.06" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -9164,14 +9237,23 @@ to change address from
 <wire x1="187.96" y1="88.9" x2="195.58" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="91.44" x2="195.58" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="195.58" y1="88.9" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="88.9" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
 <junction x="195.58" y="88.9"/>
 <pinref part="J16" gate="&gt;NAME" pin="4"/>
 <pinref part="J16" gate="&gt;NAME" pin="5"/>
+<pinref part="U$3" gate="G$1" pin="SHLD"/>
+<wire x1="195.58" y1="76.2" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="78.74" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="210.82" y1="76.2" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="76.2" x2="210.82" y2="78.74" width="0.1524" layer="91"/>
+<junction x="210.82" y="76.2"/>
+<junction x="195.58" y="76.2"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="63.5" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="63.5" x2="243.84" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9216,9 +9298,9 @@ to change address from
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="187.96" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="58.42" x2="213.36" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="185.42" y1="60.96" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="58.42" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="J9" gate="J$1" pin="1"/>
 </segment>
 <segment>
@@ -9303,8 +9385,8 @@ to change address from
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="226.06" y1="68.58" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
-<label x="228.6" y="68.58" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="91"/>
+<label x="243.84" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J13" gate="G$1" pin="3"/>
@@ -9346,8 +9428,8 @@ to change address from
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="66.04" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
-<label x="228.6" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="66.04" x2="243.84" y2="66.04" width="0.1524" layer="91"/>
+<label x="243.84" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J13" gate="G$1" pin="2"/>
@@ -9389,9 +9471,9 @@ to change address from
 </net>
 <net name="5V" class="2">
 <segment>
-<wire x1="187.96" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="60.96" x2="213.36" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="J9" gate="J$1" pin="2"/>
-<label x="185.42" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="213.36" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="101.6" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
@@ -9406,11 +9488,13 @@ to change address from
 <wire x1="187.96" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="99.06" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="96.52" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="99.06" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
 <junction x="195.58" y="99.06"/>
 <pinref part="J16" gate="&gt;NAME" pin="1"/>
 <pinref part="J16" gate="&gt;NAME" pin="2"/>
-<label x="195.58" y="101.6" size="1.778" layer="95" xref="yes"/>
+<label x="195.58" y="101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="VCC"/>
+<wire x1="210.82" y1="104.14" x2="195.58" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="104.14" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V3" class="3">
@@ -9453,9 +9537,9 @@ to change address from
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="226.06" y1="71.12" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="71.12" x2="228.6" y2="73.66" width="0.1524" layer="91"/>
-<label x="228.6" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="71.12" x2="243.84" y2="73.66" width="0.1524" layer="91"/>
+<label x="243.84" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
@@ -9503,9 +9587,9 @@ to change address from
 </net>
 <net name="PWM" class="0">
 <segment>
-<wire x1="187.96" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="63.5" x2="213.36" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="J9" gate="J$1" pin="3"/>
-<label x="185.42" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="213.36" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO13"/>
