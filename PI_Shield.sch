@@ -8320,9 +8320,10 @@ unconnected if ID EEPROM not required.</text>
 <wire x1="4.5" y1="6" x2="-4.5" y2="6" width="0.127" layer="21"/>
 <text x="-4.5" y="6.4" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-4.4" y="-7.1" size="0.8128" layer="27">&gt;VALUE</text>
-<text x="-2.4" y="1.1" size="0.8128" layer="49">MCR1101
+<text x="-2.4" y="0.338" size="0.8128" layer="49">MCR1101
 Current
 Sensor</text>
+<circle x="-2.54" y="4.826" radius="0.71841875" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
