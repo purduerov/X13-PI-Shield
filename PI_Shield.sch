@@ -8441,7 +8441,7 @@ by exp-lbrs.ulp</description>
 <class number="1" name="diff pair" width="0.2032" drill="0">
 <clearance class="1" value="0.2032"/>
 </class>
-<class number="2" name="5V" width="1.016" drill="0">
+<class number="2" name="5V" width="0.508" drill="0">
 </class>
 <class number="3" name="3.3V" width="0.6096" drill="0">
 </class>
