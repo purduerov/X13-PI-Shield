@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7296,10 +7296,10 @@ part number 2062-2P from STA</description>
 <wire x1="7.62" y1="-1.016" x2="7.62" y2="0" width="0.127" layer="21"/>
 <wire x1="13.1318" y1="-1.016" x2="13.1318" y2="0" width="0.127" layer="21"/>
 <pad name="S1" x="0.7" y="2.8" drill="0.7"/>
-<pad name="1" x="8.1" y="2.8" drill="0.8"/>
-<pad name="2" x="10.1" y="2.8" drill="0.8"/>
-<pad name="3" x="12.1" y="2.8" drill="0.8"/>
-<pad name="4" x="14.1" y="2.8" drill="0.8"/>
+<pad name="1" x="8.1" y="2.8" drill="0.8" diameter="1.524"/>
+<pad name="2" x="10.1" y="2.8" drill="0.8" diameter="1.524"/>
+<pad name="3" x="12.1" y="2.8" drill="0.8" diameter="1.524"/>
+<pad name="4" x="14.1" y="2.8" drill="0.8" diameter="1.524"/>
 <pad name="S2" x="17.1" y="2.8" drill="0.8"/>
 <wire x1="0" y1="5.588" x2="17.78" y2="5.588" width="0.127" layer="39"/>
 <wire x1="17.78" y1="5.588" x2="17.78" y2="0" width="0.127" layer="39"/>
@@ -7354,12 +7354,11 @@ part number 2062-2P from STA</description>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-10.16" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<pin name="1" x="7.62" y="0" length="middle" rot="R180"/>
-<pin name="2" x="7.62" y="-2.54" length="middle" rot="R180"/>
-<pin name="3" x="7.62" y="-5.08" length="middle" rot="R180"/>
-<pin name="4" x="7.62" y="-7.62" length="middle" rot="R180"/>
+<pin name="1" x="5.08" y="0" length="short" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="-2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="-5.08" length="short" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="-7.62" length="short" swaplevel="1" rot="R180"/>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="T2I5P">
 <wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
@@ -7375,7 +7374,7 @@ part number 2062-2P from STA</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="T2I">
+<deviceset name="T2I" prefix="J">
 <gates>
 <gate name="G$1" symbol="T2I" x="0" y="0"/>
 </gates>
@@ -8748,7 +8747,7 @@ Do not populate R3</text>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="226.06" y1="43.18" x2="228.6" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="43.18" x2="228.6" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="43.18" x2="228.6" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="J12" gate="G$1" pin="4"/>
 </segment>
@@ -8918,12 +8917,12 @@ Do not populate R3</text>
 <label x="205.74" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="132.08" x2="241.3" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="132.08" x2="241.3" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="2"/>
 <label x="241.3" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="226.06" y1="73.66" x2="228.6" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="73.66" x2="228.6" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="J11" gate="G$1" pin="2"/>
 <label x="228.6" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -8941,12 +8940,12 @@ Do not populate R3</text>
 <label x="205.74" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="129.54" x2="241.3" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="129.54" x2="241.3" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="3"/>
 <label x="241.3" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="226.06" y1="71.12" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="71.12" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="J11" gate="G$1" pin="3"/>
 <label x="228.6" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -8969,16 +8968,16 @@ Do not populate R3</text>
 </net>
 <net name="DI1" class="0">
 <segment>
-<wire x1="226.06" y1="45.72" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="J12" gate="G$1" pin="3"/>
-<label x="228.6" y="45.72" size="1.27" layer="95" xref="yes"/>
+<wire x1="223.52" y1="48.26" x2="228.6" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="J12" gate="G$1" pin="2"/>
+<label x="228.6" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DI2" class="0">
 <segment>
-<wire x1="226.06" y1="48.26" x2="228.6" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="J12" gate="G$1" pin="2"/>
-<label x="228.6" y="48.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="223.52" y1="45.72" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="J12" gate="G$1" pin="3"/>
+<label x="228.6" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -8997,7 +8996,7 @@ Do not populate R3</text>
 <wire x1="185.42" y1="71.12" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="RESET_MID" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
@@ -9059,7 +9058,7 @@ Do not populate R3</text>
 </net>
 <net name="5V" class="2">
 <segment>
-<wire x1="226.06" y1="50.8" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="50.8" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="J12" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="50.8" x2="228.6" y2="53.34" width="0.1524" layer="91"/>
 <label x="228.6" y="53.34" size="1.778" layer="95" xref="yes"/>
@@ -9624,6 +9623,11 @@ to change address from
 <wire x1="53.34" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
 <label x="58.42" y="48.26" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GI1"/>
+<wire x1="167.64" y1="139.7" x2="175.26" y2="139.7" width="0.1524" layer="91"/>
+<label x="172.72" y="139.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DI" class="0">
 <segment>
@@ -9660,9 +9664,9 @@ to change address from
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="J8" gate="J$1" pin="2"/>
-<wire x1="142.24" y1="17.78" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
-<label x="144.78" y="17.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="J8" gate="J$1" pin="3"/>
+<wire x1="142.24" y1="20.32" x2="144.78" y2="20.32" width="0.1524" layer="91"/>
+<label x="144.78" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="GPIO14"/>
@@ -9672,9 +9676,9 @@ to change address from
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="J8" gate="J$1" pin="3"/>
-<wire x1="142.24" y1="20.32" x2="144.78" y2="20.32" width="0.1524" layer="91"/>
-<label x="144.78" y="20.32" size="1.27" layer="95" xref="yes"/>
+<pinref part="J8" gate="J$1" pin="2"/>
+<wire x1="142.24" y1="17.78" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
+<label x="144.78" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="GPIO15"/>
@@ -9684,9 +9688,9 @@ to change address from
 </net>
 <net name="INT" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="GPIO19"/>
-<wire x1="53.34" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
-<label x="78.74" y="104.14" size="1.778" layer="95" xref="yes"/>
+<label x="78.74" y="109.22" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$8" gate="G$1" pin="GPIO26"/>
+<wire x1="53.34" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PI_POWER" class="0">
@@ -9778,23 +9782,11 @@ to change address from
 <label x="20.32" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="G_INT" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="GI1"/>
-<wire x1="167.64" y1="139.7" x2="175.26" y2="139.7" width="0.1524" layer="91"/>
-<label x="172.72" y="139.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="GPIO25"/>
-<wire x1="25.4" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
-<label x="20.32" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="RX0_INT" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="GPIO26"/>
-<wire x1="53.34" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
-<label x="78.74" y="109.22" size="1.778" layer="95" xref="yes"/>
+<label x="76.2" y="104.14" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$8" gate="G$1" pin="GPIO19"/>
+<wire x1="53.34" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX1_INT" class="0">
