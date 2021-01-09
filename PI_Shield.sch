@@ -8548,7 +8548,7 @@ by exp-lbrs.ulp</description>
 <part name="U$7" library="MCR1101" deviceset="MCR1101" device=""/>
 <part name="R22" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="22NF/22,000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
-<part name="C14" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="22NF/22,000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
+<part name="C14" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="22NF/22,000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value=".01uF"/>
 <part name="R23" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="R24" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="MOSFET-NCH" device="-BSS138" package3d_urn="urn:adsk.eagle:package:38446/1" value="220mA/50V/3.5Ω"/>
@@ -8910,7 +8910,7 @@ Do not populate R3</text>
 <label x="165.1" y="139.7" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CAN_H" class="1">
+<net name="CAN_P" class="1">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="142.24" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
@@ -8933,7 +8933,7 @@ Do not populate R3</text>
 <label x="165.1" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CAN_L" class="1">
+<net name="CAN_N" class="1">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="116.84" x2="208.28" y2="114.3" width="0.1524" layer="91"/>
@@ -9627,14 +9627,14 @@ to change address from
 <label x="58.42" y="93.98" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CAN_H" class="1">
+<net name="CAN_P" class="1">
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="40.64" x2="243.84" y2="40.64" width="0.1524" layer="91"/>
 <label x="243.84" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CAN_L" class="1">
+<net name="CAN_N" class="1">
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="38.1" x2="243.84" y2="38.1" width="0.1524" layer="91"/>
