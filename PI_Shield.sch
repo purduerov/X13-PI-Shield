@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9145,9 +9145,9 @@ to change address from
 <instance part="GND3" gate="1" x="195.58" y="71.12" smashed="yes">
 <attribute name="VALUE" x="193.04" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="C13" gate="G$1" x="238.76" y="160.02" smashed="yes">
-<attribute name="NAME" x="240.284" y="162.941" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="240.284" y="157.861" size="1.778" layer="96" font="vector"/>
+<instance part="C13" gate="G$1" x="238.76" y="162.56" smashed="yes">
+<attribute name="NAME" x="240.284" y="165.481" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="240.284" y="160.401" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="J1" gate="G$1" x="236.22" y="66.04" smashed="yes">
 <attribute name="VALUE" x="231.14" y="58.674" size="1.778" layer="96" font="vector"/>
@@ -9206,8 +9206,8 @@ to change address from
 <instance part="GND2" gate="1" x="233.68" y="86.36" smashed="yes">
 <attribute name="VALUE" x="231.14" y="83.82" size="1.778" layer="96"/>
 </instance>
-<instance part="GND28" gate="1" x="238.76" y="152.4" smashed="yes">
-<attribute name="VALUE" x="236.22" y="149.86" size="1.778" layer="96"/>
+<instance part="GND28" gate="1" x="238.76" y="154.94" smashed="yes">
+<attribute name="VALUE" x="236.22" y="152.4" size="1.778" layer="96"/>
 </instance>
 <instance part="R20" gate="G$1" x="241.3" y="134.62" smashed="yes" rot="MR270">
 <attribute name="NAME" x="239.776" y="134.62" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
@@ -9333,7 +9333,7 @@ to change address from
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
 <pinref part="GND28" gate="1" pin="GND"/>
-<wire x1="238.76" y1="154.94" x2="238.76" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="157.48" x2="238.76" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
@@ -9558,13 +9558,13 @@ to change address from
 </net>
 <net name="3V3" class="3">
 <segment>
-<wire x1="215.9" y1="157.48" x2="215.9" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="165.1" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="165.1" x2="215.9" y2="165.1" width="0.1524" layer="91"/>
-<junction x="215.9" y="165.1"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<label x="215.9" y="167.64" size="1.778" layer="95" xref="yes"/>
+<wire x1="215.9" y1="157.48" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
+<label x="215.9" y="170.18" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$5" gate="G$1" pin="VIN"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="167.64" x2="215.9" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="167.64" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
+<junction x="215.9" y="167.64"/>
 </segment>
 <segment>
 <pinref part="J13" gate="G$1" pin="1"/>
@@ -9627,13 +9627,6 @@ to change address from
 <pinref part="U$4" gate="G$1" pin="GI1"/>
 <wire x1="167.64" y1="139.7" x2="175.26" y2="139.7" width="0.1524" layer="91"/>
 <label x="172.72" y="139.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DI" class="0">
-<segment>
-<pinref part="U$8" gate="G$1" pin="GPIO6"/>
-<wire x1="53.34" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
-<label x="58.42" y="93.98" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_P" class="1">
@@ -9719,13 +9712,6 @@ to change address from
 <label x="20.32" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="DI3" class="0">
-<segment>
-<pinref part="U$8" gate="G$1" pin="GPIO21"/>
-<wire x1="25.4" y1="114.3" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
-<label x="20.32" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="DI2" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="GPIO20"/>
@@ -9801,6 +9787,20 @@ to change address from
 <pinref part="U$8" gate="G$1" pin="GPIO4"/>
 <wire x1="53.34" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
 <label x="58.42" y="33.02" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="3VO_1" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="3VO"/>
+<wire x1="167.64" y1="149.86" x2="175.26" y2="149.86" width="0.1524" layer="91"/>
+<label x="172.72" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="3VO_2" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="3VO"/>
+<wire x1="231.14" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
+<label x="233.68" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
