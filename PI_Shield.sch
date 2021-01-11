@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -186,52 +186,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="frames" urn="urn:adsk.eagle:library:229">
-<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="A4L-LOC" urn="urn:adsk.eagle:symbol:13874/1" library_version="1">
-<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
-<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="A4L-LOC" urn="urn:adsk.eagle:component:13926/1" prefix="FRAME" uservalue="yes" library_version="1">
-<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
-DIN A4, landscape with location and doc. field</description>
-<gates>
-<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="ECS-80-S-4X">
 <packages>
 <package name="XTAL_ECS-80-S-4X">
@@ -7934,108 +7888,6 @@ unconnected if ID EEPROM not required.</text>
 </library>
 <library name="Adafruit IMUs - BNO055 and FX">
 <packages>
-<package name="ADAFRUIT-BNO055">
-<wire x1="8.255" y1="0.635" x2="7.62" y2="0" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="0" x2="6.35" y2="0" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="0" x2="5.715" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="1.905" x2="6.35" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="2.54" x2="7.62" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="2.54" x2="8.255" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="0" x2="11.43" y2="0" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="0" x2="10.795" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="1.905" x2="11.43" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="0.635" x2="10.16" y2="0" width="0.2032" layer="21"/>
-<wire x1="10.16" y1="0" x2="8.89" y2="0" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="0" x2="8.255" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="1.905" x2="8.89" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="2.54" x2="10.16" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="10.16" y1="2.54" x2="10.795" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="15.875" y1="0.635" x2="15.24" y2="0" width="0.2032" layer="21"/>
-<wire x1="15.24" y1="0" x2="13.97" y2="0" width="0.2032" layer="21"/>
-<wire x1="13.97" y1="0" x2="13.335" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="1.905" x2="13.97" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="13.97" y1="2.54" x2="15.24" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="15.24" y1="2.54" x2="15.875" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="0" x2="13.335" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="1.905" x2="12.7" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="2.54" x2="12.7" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="20.32" y1="0" x2="19.05" y2="0" width="0.2032" layer="21"/>
-<wire x1="19.05" y1="0" x2="18.415" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="18.415" y1="1.905" x2="19.05" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="18.415" y1="0.635" x2="17.78" y2="0" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="0" x2="16.51" y2="0" width="0.2032" layer="21"/>
-<wire x1="16.51" y1="0" x2="15.875" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="15.875" y1="1.905" x2="16.51" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="16.51" y1="2.54" x2="17.78" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="2.54" x2="18.415" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="20.955" y1="0.635" x2="20.955" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="20.32" y1="0" x2="20.955" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="20.955" y1="1.905" x2="20.32" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="19.05" y1="2.54" x2="20.32" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="0.635" x2="5.715" y2="1.905" width="0.2032" layer="21"/>
-<pad name="RST" x="19.685" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="SCL" x="17.145" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="SDA" x="14.605" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="GND" x="12.065" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="3VO" x="9.525" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="VIN" x="6.985" y="1.27" drill="1.016" diameter="1.8796"/>
-<rectangle x1="6.731" y1="1.016" x2="7.239" y2="1.524" layer="51" rot="R270"/>
-<rectangle x1="9.271" y1="1.016" x2="9.779" y2="1.524" layer="51" rot="R180"/>
-<rectangle x1="11.811" y1="1.016" x2="12.319" y2="1.524" layer="51" rot="R180"/>
-<rectangle x1="14.351" y1="1.016" x2="14.859" y2="1.524" layer="51" rot="R180"/>
-<rectangle x1="16.891" y1="1.016" x2="17.399" y2="1.524" layer="51" rot="R180"/>
-<rectangle x1="19.431" y1="1.016" x2="19.939" y2="1.524" layer="51" rot="R180"/>
-<text x="9.525" y="3.302" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="15.875" y="3.175" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="12.7" y1="17.78" x2="11.43" y2="17.78" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="17.78" x2="10.795" y2="18.415" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="19.685" x2="11.43" y2="20.32" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="18.415" x2="10.16" y2="17.78" width="0.2032" layer="21"/>
-<wire x1="10.16" y1="17.78" x2="8.89" y2="17.78" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="17.78" x2="8.255" y2="18.415" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="19.685" x2="8.89" y2="20.32" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="20.32" x2="10.16" y2="20.32" width="0.2032" layer="21"/>
-<wire x1="10.16" y1="20.32" x2="10.795" y2="19.685" width="0.2032" layer="21"/>
-<wire x1="15.875" y1="18.415" x2="15.24" y2="17.78" width="0.2032" layer="21"/>
-<wire x1="15.24" y1="17.78" x2="13.97" y2="17.78" width="0.2032" layer="21"/>
-<wire x1="13.97" y1="17.78" x2="13.335" y2="18.415" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="19.685" x2="13.97" y2="20.32" width="0.2032" layer="21"/>
-<wire x1="13.97" y1="20.32" x2="15.24" y2="20.32" width="0.2032" layer="21"/>
-<wire x1="15.24" y1="20.32" x2="15.875" y2="19.685" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="17.78" x2="13.335" y2="18.415" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="19.685" x2="12.7" y2="20.32" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="20.32" x2="12.7" y2="20.32" width="0.2032" layer="21"/>
-<wire x1="18.415" y1="18.415" x2="17.78" y2="17.78" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="17.78" x2="16.51" y2="17.78" width="0.2032" layer="21"/>
-<wire x1="16.51" y1="17.78" x2="15.875" y2="18.415" width="0.2032" layer="21"/>
-<wire x1="15.875" y1="19.685" x2="16.51" y2="20.32" width="0.2032" layer="21"/>
-<wire x1="16.51" y1="20.32" x2="17.78" y2="20.32" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="20.32" x2="18.415" y2="19.685" width="0.2032" layer="21"/>
-<pad name="ADR" x="17.145" y="19.05" drill="1.016" diameter="1.8796"/>
-<pad name="INT" x="14.605" y="19.05" drill="1.016" diameter="1.8796"/>
-<pad name="PS1" x="12.065" y="19.05" drill="1.016" diameter="1.8796"/>
-<pad name="PS0" x="9.525" y="19.05" drill="1.016" diameter="1.8796"/>
-<rectangle x1="9.271" y1="18.796" x2="9.779" y2="19.304" layer="51" rot="R180"/>
-<rectangle x1="11.811" y1="18.796" x2="12.319" y2="19.304" layer="51" rot="R180"/>
-<rectangle x1="14.351" y1="18.796" x2="14.859" y2="19.304" layer="51" rot="R270"/>
-<rectangle x1="16.891" y1="18.796" x2="17.399" y2="19.304" layer="51" rot="R180"/>
-<wire x1="5.461" y1="-0.254" x2="21.209" y2="-0.254" width="0.127" layer="39"/>
-<wire x1="21.209" y1="-0.254" x2="21.209" y2="2.794" width="0.127" layer="39"/>
-<wire x1="21.209" y1="2.794" x2="5.461" y2="2.794" width="0.127" layer="39"/>
-<wire x1="5.461" y1="2.794" x2="5.461" y2="-0.254" width="0.127" layer="39"/>
-<wire x1="8.001" y1="20.574" x2="18.669" y2="20.574" width="0.127" layer="39"/>
-<wire x1="18.669" y1="20.574" x2="18.669" y2="17.526" width="0.127" layer="39"/>
-<wire x1="18.669" y1="17.526" x2="8.001" y2="17.526" width="0.127" layer="39"/>
-<wire x1="8.001" y1="17.526" x2="8.001" y2="20.574" width="0.127" layer="39"/>
-<wire x1="2.54" y1="20.32" x2="24.13" y2="20.32" width="0.127" layer="21"/>
-<wire x1="24.13" y1="20.32" x2="26.67" y2="17.78" width="0.127" layer="21" curve="-90"/>
-<wire x1="26.67" y1="17.78" x2="26.67" y2="2.54" width="0.127" layer="21"/>
-<wire x1="26.67" y1="2.54" x2="24.13" y2="0" width="0.127" layer="21" curve="-90"/>
-<wire x1="24.13" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="21" curve="-90"/>
-<wire x1="0" y1="2.54" x2="0" y2="17.78" width="0.127" layer="21"/>
-<wire x1="0" y1="17.78" x2="2.54" y2="20.32" width="0.127" layer="21" curve="-90"/>
-</package>
 <package name="ADAFRUIT-FXOS8700-FXAS21002">
 <wire x1="8.89" y1="1.905" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="8.255" y1="1.27" x2="6.985" y2="1.27" width="0.2032" layer="21"/>
@@ -8129,34 +7981,119 @@ unconnected if ID EEPROM not required.</text>
 <wire x1="19.304" y1="19.304" x2="19.304" y2="16.256" width="0.127" layer="39"/>
 <wire x1="19.304" y1="16.256" x2="8.636" y2="16.256" width="0.127" layer="39"/>
 <wire x1="8.636" y1="16.256" x2="8.636" y2="19.304" width="0.127" layer="39"/>
-<wire x1="0" y1="2.54" x2="0" y2="17.78" width="0.127" layer="21"/>
-<wire x1="0" y1="17.78" x2="2.54" y2="20.32" width="0.127" layer="21" curve="-90"/>
-<wire x1="2.54" y1="20.32" x2="25.4" y2="20.32" width="0.127" layer="21"/>
-<wire x1="25.4" y1="20.32" x2="27.94" y2="17.78" width="0.127" layer="21" curve="-90"/>
-<wire x1="27.94" y1="17.78" x2="27.94" y2="2.54" width="0.127" layer="21"/>
-<wire x1="27.94" y1="2.54" x2="25.4" y2="0" width="0.127" layer="21" curve="-90"/>
-<wire x1="25.4" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="2.54" x2="0" y2="17.78" width="0.127" layer="51"/>
+<wire x1="0" y1="17.78" x2="2.54" y2="20.32" width="0.127" layer="51" curve="-90"/>
+<wire x1="2.54" y1="20.32" x2="25.4" y2="20.32" width="0.127" layer="51"/>
+<wire x1="25.4" y1="20.32" x2="27.94" y2="17.78" width="0.127" layer="51" curve="-90"/>
+<wire x1="27.94" y1="17.78" x2="27.94" y2="2.54" width="0.127" layer="51"/>
+<wire x1="27.94" y1="2.54" x2="25.4" y2="0" width="0.127" layer="51" curve="-90"/>
+<wire x1="25.4" y1="0" x2="2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="51" curve="-90"/>
+</package>
+<package name="ADAFRUIT-BNO055">
+<wire x1="8.255" y1="0.635" x2="7.62" y2="0" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="0" x2="6.35" y2="0" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0" x2="5.715" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.905" x2="6.35" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="2.54" x2="7.62" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="2.54" x2="8.255" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="12.7" y1="0" x2="11.43" y2="0" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="0" x2="10.795" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="10.795" y1="1.905" x2="11.43" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="10.795" y1="0.635" x2="10.16" y2="0" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="0" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="0" x2="8.255" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="1.905" x2="8.89" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="2.54" x2="10.16" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="2.54" x2="10.795" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="15.875" y1="0.635" x2="15.24" y2="0" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="0" x2="13.97" y2="0" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="0" x2="13.335" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="13.335" y1="1.905" x2="13.97" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="2.54" x2="15.24" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="2.54" x2="15.875" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="12.7" y1="0" x2="13.335" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="13.335" y1="1.905" x2="12.7" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="2.54" x2="12.7" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="20.32" y1="0" x2="19.05" y2="0" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="0" x2="18.415" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="1.905" x2="19.05" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="0.635" x2="17.78" y2="0" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="0" x2="16.51" y2="0" width="0.2032" layer="21"/>
+<wire x1="16.51" y1="0" x2="15.875" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="15.875" y1="1.905" x2="16.51" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="16.51" y1="2.54" x2="17.78" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="2.54" x2="18.415" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="20.955" y1="0.635" x2="20.955" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="20.32" y1="0" x2="20.955" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="20.955" y1="1.905" x2="20.32" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="2.54" x2="20.32" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="0.635" x2="5.715" y2="1.905" width="0.2032" layer="21"/>
+<pad name="RST" x="19.685" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="SCL" x="17.145" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="SDA" x="14.605" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="GND" x="12.065" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="3VO" x="9.525" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="VIN" x="6.985" y="1.27" drill="1.016" diameter="1.8796"/>
+<rectangle x1="6.731" y1="1.016" x2="7.239" y2="1.524" layer="51" rot="R270"/>
+<rectangle x1="9.271" y1="1.016" x2="9.779" y2="1.524" layer="51" rot="R180"/>
+<rectangle x1="11.811" y1="1.016" x2="12.319" y2="1.524" layer="51" rot="R180"/>
+<rectangle x1="14.351" y1="1.016" x2="14.859" y2="1.524" layer="51" rot="R180"/>
+<rectangle x1="16.891" y1="1.016" x2="17.399" y2="1.524" layer="51" rot="R180"/>
+<rectangle x1="19.431" y1="1.016" x2="19.939" y2="1.524" layer="51" rot="R180"/>
+<text x="9.525" y="3.302" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="15.875" y="3.175" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="12.7" y1="17.78" x2="11.43" y2="17.78" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="17.78" x2="10.795" y2="18.415" width="0.2032" layer="21"/>
+<wire x1="10.795" y1="19.685" x2="11.43" y2="20.32" width="0.2032" layer="21"/>
+<wire x1="10.795" y1="18.415" x2="10.16" y2="17.78" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="17.78" x2="8.89" y2="17.78" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="17.78" x2="8.255" y2="18.415" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="19.685" x2="8.89" y2="20.32" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="20.32" x2="10.16" y2="20.32" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="20.32" x2="10.795" y2="19.685" width="0.2032" layer="21"/>
+<wire x1="15.875" y1="18.415" x2="15.24" y2="17.78" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="17.78" x2="13.97" y2="17.78" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="17.78" x2="13.335" y2="18.415" width="0.2032" layer="21"/>
+<wire x1="13.335" y1="19.685" x2="13.97" y2="20.32" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="20.32" x2="15.24" y2="20.32" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="20.32" x2="15.875" y2="19.685" width="0.2032" layer="21"/>
+<wire x1="12.7" y1="17.78" x2="13.335" y2="18.415" width="0.2032" layer="21"/>
+<wire x1="13.335" y1="19.685" x2="12.7" y2="20.32" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="20.32" x2="12.7" y2="20.32" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="18.415" x2="17.78" y2="17.78" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="17.78" x2="16.51" y2="17.78" width="0.2032" layer="21"/>
+<wire x1="16.51" y1="17.78" x2="15.875" y2="18.415" width="0.2032" layer="21"/>
+<wire x1="15.875" y1="19.685" x2="16.51" y2="20.32" width="0.2032" layer="21"/>
+<wire x1="16.51" y1="20.32" x2="17.78" y2="20.32" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="20.32" x2="18.415" y2="19.685" width="0.2032" layer="21"/>
+<pad name="ADR" x="17.145" y="19.05" drill="1.016" diameter="1.8796"/>
+<pad name="INT" x="14.605" y="19.05" drill="1.016" diameter="1.8796"/>
+<pad name="PS1" x="12.065" y="19.05" drill="1.016" diameter="1.8796"/>
+<pad name="PS0" x="9.525" y="19.05" drill="1.016" diameter="1.8796"/>
+<rectangle x1="9.271" y1="18.796" x2="9.779" y2="19.304" layer="51" rot="R180"/>
+<rectangle x1="11.811" y1="18.796" x2="12.319" y2="19.304" layer="51" rot="R180"/>
+<rectangle x1="14.351" y1="18.796" x2="14.859" y2="19.304" layer="51" rot="R270"/>
+<rectangle x1="16.891" y1="18.796" x2="17.399" y2="19.304" layer="51" rot="R180"/>
+<wire x1="5.461" y1="-0.254" x2="21.209" y2="-0.254" width="0.127" layer="39"/>
+<wire x1="21.209" y1="-0.254" x2="21.209" y2="2.794" width="0.127" layer="39"/>
+<wire x1="21.209" y1="2.794" x2="5.461" y2="2.794" width="0.127" layer="39"/>
+<wire x1="5.461" y1="2.794" x2="5.461" y2="-0.254" width="0.127" layer="39"/>
+<wire x1="8.001" y1="20.574" x2="18.669" y2="20.574" width="0.127" layer="39"/>
+<wire x1="18.669" y1="20.574" x2="18.669" y2="17.526" width="0.127" layer="39"/>
+<wire x1="18.669" y1="17.526" x2="8.001" y2="17.526" width="0.127" layer="39"/>
+<wire x1="8.001" y1="17.526" x2="8.001" y2="20.574" width="0.127" layer="39"/>
+<wire x1="2.54" y1="20.32" x2="24.13" y2="20.32" width="0.127" layer="51"/>
+<wire x1="24.13" y1="20.32" x2="26.67" y2="17.78" width="0.127" layer="51" curve="-90"/>
+<wire x1="26.67" y1="17.78" x2="26.67" y2="2.54" width="0.127" layer="51"/>
+<wire x1="26.67" y1="2.54" x2="24.13" y2="0" width="0.127" layer="51" curve="-90"/>
+<wire x1="24.13" y1="0" x2="2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="51" curve="-90"/>
+<wire x1="0" y1="2.54" x2="0" y2="17.78" width="0.127" layer="51"/>
+<wire x1="0" y1="17.78" x2="2.54" y2="20.32" width="0.127" layer="51" curve="-90"/>
 </package>
 </packages>
 <symbols>
-<symbol name="ADAFRUIT-BNO055">
-<pin name="VIN" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
-<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
-<pin name="SCL" x="-15.24" y="2.54" length="middle"/>
-<pin name="SDA" x="-15.24" y="0" length="middle"/>
-<pin name="3VO" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="RST" x="-15.24" y="-5.08" length="middle" direction="in"/>
-<pin name="INT" x="15.24" y="0" length="middle" direction="out" swaplevel="1" rot="R180"/>
-<pin name="ADR" x="15.24" y="-2.54" length="middle" direction="in" swaplevel="1" rot="R180"/>
-<pin name="PS0" x="15.24" y="-5.08" length="middle" direction="in" swaplevel="2" rot="R180"/>
-<pin name="PS1" x="15.24" y="-7.62" length="middle" direction="in" swaplevel="2" rot="R180"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
 <symbol name="ADAFRUIT-FXOS8700-FXAS21002">
 <pin name="VIN" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
 <pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
@@ -8174,32 +8111,25 @@ unconnected if ID EEPROM not required.</text>
 <wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="ADAFRUIT-BNO055">
+<pin name="VIN" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="SCL" x="-15.24" y="2.54" length="middle"/>
+<pin name="SDA" x="-15.24" y="0" length="middle"/>
+<pin name="3VO" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="RST" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="INT" x="15.24" y="0" length="middle" direction="out" swaplevel="1" rot="R180"/>
+<pin name="ADR" x="15.24" y="-2.54" length="middle" direction="in" swaplevel="1" rot="R180"/>
+<pin name="PS0" x="15.24" y="-5.08" length="middle" direction="in" swaplevel="2" rot="R180"/>
+<pin name="PS1" x="15.24" y="-7.62" length="middle" direction="in" swaplevel="2" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="ADAFRUIT-BNO055">
-<gates>
-<gate name="G$1" symbol="ADAFRUIT-BNO055" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ADAFRUIT-BNO055">
-<connects>
-<connect gate="G$1" pin="3VO" pad="3VO"/>
-<connect gate="G$1" pin="ADR" pad="ADR"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="INT" pad="INT"/>
-<connect gate="G$1" pin="PS0" pad="PS0"/>
-<connect gate="G$1" pin="PS1" pad="PS1"/>
-<connect gate="G$1" pin="RST" pad="RST"/>
-<connect gate="G$1" pin="SCL" pad="SCL"/>
-<connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ADAFRUIT-FXOS8700-FXAS21002">
 <gates>
 <gate name="G$1" symbol="ADAFRUIT-FXOS8700-FXAS21002" x="0" y="0"/>
@@ -8213,6 +8143,30 @@ unconnected if ID EEPROM not required.</text>
 <connect gate="G$1" pin="GI1" pad="GI1"/>
 <connect gate="G$1" pin="GI2" pad="GI2"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADAFRUIT-BNO055">
+<gates>
+<gate name="G$1" symbol="ADAFRUIT-BNO055" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ADAFRUIT-BNO055">
+<connects>
+<connect gate="G$1" pin="3VO" pad="3VO"/>
+<connect gate="G$1" pin="ADR" pad="ADR"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INT" pad="INT"/>
+<connect gate="G$1" pin="PS0" pad="PS0"/>
+<connect gate="G$1" pin="PS1" pad="PS1"/>
 <connect gate="G$1" pin="RST" pad="RST"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
@@ -8430,6 +8384,67 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Aesthetics" urn="urn:adsk.eagle:library:507">
+<description>&lt;h3&gt;SparkFun Aesthetics&lt;/h3&gt;
+This library contiains non-functional items such as logos, build/ordering notes, frame blocks, etc. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="FR-A4L" urn="urn:adsk.eagle:symbol:37073/1" library_version="1">
+<description>&lt;h3&gt;Schematic Frame - A4L - European Format&lt;/h3&gt;
+&lt;p&gt;Standard A4 size frame in Landscape&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FRAME-A4L&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<rectangle x1="178.7652" y1="0" x2="179.3748" y2="20.32" layer="94"/>
+<rectangle x1="225.7552" y1="-26.67" x2="226.3648" y2="67.31" layer="94" rot="R90"/>
+<wire x1="225.29" y1="-0.1" x2="225.29" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="225.29" y1="5.08" x2="273.05" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="225.29" y1="5.08" x2="179.07" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="179.07" y1="10.16" x2="225.29" y2="10.16" width="0.1016" layer="94"/>
+<wire x1="225.29" y1="10.16" x2="273.05" y2="10.16" width="0.1016" layer="94"/>
+<wire x1="179.07" y1="15.24" x2="273.05" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="225.29" y1="5.08" x2="225.29" y2="10.16" width="0.1016" layer="94"/>
+<wire x1="179.07" y1="19.05" x2="179.07" y2="20.32" width="0.6096" layer="94"/>
+<wire x1="179.07" y1="20.32" x2="180.34" y2="20.32" width="0.6096" layer="94"/>
+<text x="181.61" y="11.43" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="181.61" y="6.35" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="195.58" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="181.61" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="181.61" y="16.51" size="2.54" layer="94" font="vector">&gt;CNAME</text>
+<text x="226.16" y="1.27" size="2.54" layer="94" font="vector">Rev:</text>
+<text x="226.26" y="6.35" size="2.54" layer="94" font="vector">&gt;DESIGNER</text>
+<text x="234.92" y="1.17" size="2.54" layer="94" font="vector">&gt;CREVISION</text>
+<frame x1="-3.81" y1="-3.81" x2="276.86" y2="182.88" columns="8" rows="5" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FRAME-A4L" urn="urn:adsk.eagle:component:37152/1" prefix="FRAME" library_version="1">
+<description>&lt;h3&gt;Schematic Frame - A4L - European Format&lt;/h3&gt;
+&lt;p&gt;Standard A4 size frame in Landscape&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FR-A4L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8447,11 +8462,8 @@ by exp-lbrs.ulp</description>
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="Y1" library="ECS-80-S-4X" deviceset="ECS-80-S-4X" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="60"/>
 <part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="60"/>
 <part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="22NF/22,000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="22nF"/>
@@ -8541,8 +8553,8 @@ by exp-lbrs.ulp</description>
 <part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="18PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="18pF"/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R20" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=""/>
-<part name="U$4" library="Adafruit IMUs - BNO055 and FX" deviceset="ADAFRUIT-FXOS8700-FXAS21002" device=""/>
-<part name="U$5" library="Adafruit IMUs - BNO055 and FX" deviceset="ADAFRUIT-BNO055" device=""/>
+<part name="U$4" library="Adafruit IMUs - BNO055 and FX" deviceset="ADAFRUIT-BNO055" device=""/>
+<part name="U$5" library="Adafruit IMUs - BNO055 and FX" deviceset="ADAFRUIT-FXOS8700-FXAS21002" device=""/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$3" library="usb conn" deviceset="USB-MICRO" device=""/>
 <part name="U$7" library="MCR1101" deviceset="MCR1101" device=""/>
@@ -8567,6 +8579,9 @@ by exp-lbrs.ulp</description>
 <part name="R27" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=""/>
 <part name="D3" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
 <part name="D5" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
+<part name="FRAME4" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-A4L" device=""/>
+<part name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-A4L" device=""/>
+<part name="FRAME2" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-A4L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8582,11 +8597,6 @@ Silent mode is unwanted
 Do not populate R3</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
-<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
-</instance>
 <instance part="Y1" gate="G$1" x="20.32" y="48.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.89693125" y="45.971540625" size="1.77991875" layer="95" rot="R180"/>
 <attribute name="VALUE" x="24.64303125" y="52.83733125" size="1.78006875" layer="96" rot="R180"/>
@@ -8711,6 +8721,11 @@ Do not populate R3</text>
 <instance part="C2" gate="G$1" x="27.94" y="38.1" smashed="yes">
 <attribute name="NAME" x="29.464" y="41.021" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="29.464" y="35.941" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="181.61" y="11.43" size="2.54" layer="94" font="vector"/>
+<attribute name="LAST_DATE_TIME" x="181.61" y="6.35" size="2.286" layer="94" font="vector"/>
+<attribute name="SHEET" x="195.58" y="1.27" size="2.54" layer="94" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -9109,11 +9124,6 @@ to change address from
 <text x="175.26" y="134.62" size="1.778" layer="91">I2C Pull-up Resistors</text>
 </plain>
 <instances>
-<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
-<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
-</instance>
 <instance part="J4" gate="G$1" x="182.88" y="38.1" smashed="yes">
 <attribute name="VALUE" x="180.34" y="28.194" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="180.34" y="46.228" size="1.778" layer="95" font="vector"/>
@@ -9253,6 +9263,11 @@ to change address from
 </instance>
 <instance part="GND47" gate="1" x="66.04" y="38.1" smashed="yes" rot="R90">
 <attribute name="VALUE" x="68.58" y="35.56" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="181.61" y="11.43" size="2.54" layer="94" font="vector"/>
+<attribute name="LAST_DATE_TIME" x="181.61" y="6.35" size="2.286" layer="94" font="vector"/>
+<attribute name="SHEET" x="195.58" y="1.27" size="2.54" layer="94" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -9620,7 +9635,7 @@ to change address from
 <segment>
 <label x="233.68" y="144.78" size="1.778" layer="95" xref="yes"/>
 <wire x1="231.14" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="INT"/>
+<pinref part="U$5" gate="G$1" pin="AI1"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="GPIO27"/>
@@ -9628,7 +9643,7 @@ to change address from
 <label x="58.42" y="48.26" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GI1"/>
+<pinref part="U$4" gate="G$1" pin="PS0"/>
 <wire x1="167.64" y1="139.7" x2="175.26" y2="139.7" width="0.1524" layer="91"/>
 <label x="172.72" y="139.7" size="1.778" layer="95"/>
 </segment>
@@ -9743,7 +9758,7 @@ to change address from
 <wire x1="236.22" y1="142.24" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="129.54" x2="241.3" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="2"/>
-<pinref part="U$5" gate="G$1" pin="ADR"/>
+<pinref part="U$5" gate="G$1" pin="AI2"/>
 </segment>
 </net>
 <net name="5V_RAW" class="0">
@@ -9762,7 +9777,7 @@ to change address from
 </net>
 <net name="A_INT" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="AI1"/>
+<pinref part="U$4" gate="G$1" pin="INT"/>
 <wire x1="167.64" y1="144.78" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 <label x="172.72" y="144.78" size="1.778" layer="95"/>
 </segment>
@@ -9825,11 +9840,6 @@ no current sensor is used</text>
 Overcurrent Fault</text>
 </plain>
 <instances>
-<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
-<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
-</instance>
 <instance part="U1" gate="A" x="127" y="144.78" smashed="yes">
 <attribute name="NAME" x="155.3306" y="153.90988125" size="2.08538125" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="154.6981" y="151.367509375" size="2.08561875" layer="96" ratio="6" rot="SR0"/>
@@ -9981,6 +9991,11 @@ Overcurrent Fault</text>
 <instance part="D5" gate="G$1" x="22.86" y="17.78" smashed="yes">
 <attribute name="NAME" x="19.431" y="13.208" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="24.765" y="13.208" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="181.61" y="11.43" size="2.54" layer="94" font="vector"/>
+<attribute name="LAST_DATE_TIME" x="181.61" y="6.35" size="2.286" layer="94" font="vector"/>
+<attribute name="SHEET" x="195.58" y="1.27" size="2.54" layer="94" font="vector"/>
 </instance>
 </instances>
 <busses>
