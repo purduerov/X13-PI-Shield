@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7156,6 +7156,7 @@ part number 2062-2P from STA</description>
 <smd name="6" x="2.1844" y="-0.3302" dx="1.3716" dy="0.4064" layer="1"/>
 <smd name="7" x="2.1844" y="0.3302" dx="1.3716" dy="0.4064" layer="1"/>
 <smd name="8" x="2.1844" y="0.9906" dx="1.3716" dy="0.4064" layer="1"/>
+<circle x="-0.762" y="0.889" radius="0.283978125" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -8442,7 +8443,7 @@ by exp-lbrs.ulp</description>
 </class>
 <class number="2" name="5V" width="0.508" drill="0">
 </class>
-<class number="3" name="3.3V" width="0.6096" drill="0">
+<class number="3" name="3.3V" width="0.508" drill="0">
 </class>
 </classes>
 <parts>
@@ -8562,6 +8563,10 @@ by exp-lbrs.ulp</description>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R26" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=""/>
+<part name="R27" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=""/>
+<part name="D3" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
+<part name="D5" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -8908,7 +8913,7 @@ Do not populate R3</text>
 <label x="165.1" y="139.7" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CAN_P" class="1">
+<net name="CAN_H" class="1">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="142.24" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
@@ -8931,7 +8936,7 @@ Do not populate R3</text>
 <label x="165.1" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CAN_N" class="1">
+<net name="CAN_L" class="1">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="116.84" x2="208.28" y2="114.3" width="0.1524" layer="91"/>
@@ -9628,14 +9633,14 @@ to change address from
 <label x="172.72" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CAN_P" class="1">
+<net name="CAN_H" class="1">
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="40.64" x2="243.84" y2="40.64" width="0.1524" layer="91"/>
 <label x="243.84" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CAN_N" class="1">
+<net name="CAN_L" class="1">
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="38.1" x2="243.84" y2="38.1" width="0.1524" layer="91"/>
@@ -9961,6 +9966,22 @@ Overcurrent Fault</text>
 <attribute name="VALUE" x="110.236" y="43.18" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
 <instance part="U$6" gate="G$1" x="111.76" y="22.86" smashed="yes" rot="R270"/>
+<instance part="R26" gate="G$1" x="12.7" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.176" y="30.48" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="14.224" y="30.48" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R27" gate="G$1" x="22.86" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="21.336" y="30.48" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="24.384" y="30.48" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="D3" gate="G$1" x="12.7" y="17.78" smashed="yes">
+<attribute name="NAME" x="9.271" y="13.208" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="14.605" y="13.208" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+</instance>
+<instance part="D5" gate="G$1" x="22.86" y="17.78" smashed="yes">
+<attribute name="NAME" x="19.431" y="13.208" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="24.765" y="13.208" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10044,6 +10065,16 @@ Overcurrent Fault</text>
 <wire x1="111.76" y1="15.24" x2="111.76" y2="10.16" width="0.1524" layer="91"/>
 <label x="111.76" y="10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
+<label x="12.7" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D5" gate="G$1" pin="C"/>
+<wire x1="22.86" y1="12.7" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
+<label x="22.86" y="7.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="5V" class="2">
 <segment>
@@ -10123,6 +10154,11 @@ Overcurrent Fault</text>
 <wire x1="170.18" y1="81.28" x2="170.18" y2="83.82" width="0.1524" layer="91"/>
 <junction x="170.18" y="81.28"/>
 <label x="170.18" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="35.56" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
+<label x="12.7" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -10208,6 +10244,11 @@ Overcurrent Fault</text>
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="48.26" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
 <label x="109.22" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="35.56" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<label x="22.86" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA_ADC" class="0">
@@ -10332,6 +10373,20 @@ Overcurrent Fault</text>
 <pinref part="Q5" gate="G$1" pin="D"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="58.42" x2="175.26" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="20.32" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
