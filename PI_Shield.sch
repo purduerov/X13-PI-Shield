@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8575,7 +8575,6 @@ by exp-lbrs.ulp</description>
 <text x="109.22" y="127" size="1.778" layer="91">Pull S pin high for silent mode
 Silent mode is unwanted
 Do not populate R3</text>
-<text x="-73.66" y="147.32" size="1.778" layer="91">CONNECT INTERRUPT PINS FROM CONTROLLER TO PI?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -9068,14 +9067,14 @@ Do not populate R3</text>
 <segment>
 <pinref part="U$1" gate="G$1" pin="RX0BF"/>
 <wire x1="60.96" y1="129.54" x2="63.5" y2="129.54" width="0.1524" layer="91"/>
-<label x="63.5" y="129.54" size="1.778" layer="95"/>
+<label x="63.5" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RX1_INT" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="RX1BF"/>
 <wire x1="60.96" y1="127" x2="63.5" y2="127" width="0.1524" layer="91"/>
-<label x="63.5" y="127" size="1.778" layer="95"/>
+<label x="63.5" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_RESET" class="0">
@@ -9953,9 +9952,9 @@ Overcurrent Fault</text>
 <attribute name="NAME" x="59.436" y="38.1" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="62.484" y="38.1" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="Q2" gate="NMOS" x="78.74" y="27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="78.74" y="33.02" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="81.28" y="33.02" size="1.778" layer="96" font="vector" rot="R90"/>
+<instance part="Q2" gate="NMOS" x="63.5" y="22.86" smashed="yes" rot="MR0">
+<attribute name="NAME" x="58.42" y="22.86" size="1.778" layer="95" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="58.42" y="20.32" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
 <instance part="R25" gate="G$1" x="111.76" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="113.284" y="43.18" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
@@ -10037,8 +10036,8 @@ Overcurrent Fault</text>
 </segment>
 <segment>
 <pinref part="Q2" gate="NMOS" pin="S"/>
-<wire x1="83.82" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
-<label x="86.36" y="30.48" size="1.778" layer="95"/>
+<wire x1="60.96" y1="17.78" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
+<label x="60.96" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="P$2"/>
@@ -10293,9 +10292,8 @@ Overcurrent Fault</text>
 <net name="N$13" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="33.02" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="NMOS" pin="D"/>
-<wire x1="60.96" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="33.02" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!AMP_RESET" class="0">
@@ -10308,8 +10306,7 @@ Overcurrent Fault</text>
 <wire x1="111.76" y1="33.02" x2="119.38" y2="33.02" width="0.1524" layer="91"/>
 <label x="114.3" y="33.02" size="1.778" layer="95"/>
 <pinref part="Q2" gate="NMOS" pin="G"/>
-<wire x1="81.28" y1="22.86" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="20.32" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="33.02" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
 </segment>
