@@ -8556,7 +8556,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$4" library="Adafruit IMUs - BNO055 and FX" deviceset="ADAFRUIT-BNO055" device=""/>
 <part name="U$5" library="Adafruit IMUs - BNO055 and FX" deviceset="ADAFRUIT-FXOS8700-FXAS21002" device=""/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$3" library="usb conn" deviceset="USB-MICRO" device=""/>
+<part name="J17" library="usb conn" deviceset="USB-MICRO" device=""/>
 <part name="U$7" library="MCR1101" deviceset="MCR1101" device=""/>
 <part name="R22" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="22NF/22,000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
@@ -9236,7 +9236,7 @@ to change address from
 <instance part="GND31" gate="1" x="152.4" y="124.46" smashed="yes">
 <attribute name="VALUE" x="149.86" y="121.92" size="1.778" layer="96"/>
 </instance>
-<instance part="U$3" gate="G$1" x="205.74" y="96.52" smashed="yes">
+<instance part="J17" gate="G$1" x="205.74" y="96.52" smashed="yes">
 <attribute name="NAME" x="203.2" y="99.06" size="1.27" layer="95"/>
 </instance>
 <instance part="U$8" gate="G$1" x="124.46" y="7.62" smashed="yes" rot="R90"/>
@@ -9318,11 +9318,11 @@ to change address from
 <junction x="195.58" y="88.9"/>
 <pinref part="J16" gate="&gt;NAME" pin="4"/>
 <pinref part="J16" gate="&gt;NAME" pin="5"/>
-<pinref part="U$3" gate="G$1" pin="SHLD"/>
+<pinref part="J17" gate="G$1" pin="SHLD"/>
 <wire x1="195.58" y1="76.2" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="78.74" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="J17" gate="G$1" pin="GND"/>
 <wire x1="210.82" y1="76.2" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="76.2" x2="210.82" y2="78.74" width="0.1524" layer="91"/>
 <junction x="210.82" y="76.2"/>
@@ -9770,7 +9770,7 @@ to change address from
 <pinref part="J16" gate="&gt;NAME" pin="1"/>
 <pinref part="J16" gate="&gt;NAME" pin="2"/>
 <label x="195.58" y="101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$3" gate="G$1" pin="VCC"/>
+<pinref part="J17" gate="G$1" pin="VCC"/>
 <wire x1="210.82" y1="104.14" x2="195.58" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="104.14" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
 </segment>
@@ -9838,6 +9838,8 @@ no current sensor is used</text>
 <text x="83.82" y="109.22" size="1.778" layer="91">Current Sensor</text>
 <text x="81.28" y="63.5" size="1.778" layer="91">Circuit to Reset
 Overcurrent Fault</text>
+<text x="73.66" y="111.76" size="1.778" layer="91">Need to replace the sensor sensor with one in stock</text>
+<text x="129.54" y="162.56" size="1.778" layer="91">Should replace the ADC with a cheaper one</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="127" y="144.78" smashed="yes">
