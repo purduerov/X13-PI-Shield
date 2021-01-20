@@ -7521,11 +7521,13 @@ part number 2062-2P from STA</description>
 <library name="RaspberryPi">
 <packages>
 <package name="RPI4">
-<description>Package for the Raspberry Pi 2 board created by www.elemenet14.com based on documented dimensions and board measurements.
-For more documentation, please visit http://www.raspberrypi.org/documentation/hardware/raspberrypi/</description>
+<description>Footprint for Raspberry Pi 4 based on dimensions from https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/README.md</description>
 <wire x1="0" y1="53" x2="0" y2="3" width="0.127" layer="49"/>
 <wire x1="0" y1="3" x2="3" y2="0" width="0.127" layer="49" curve="90"/>
-<wire x1="3" y1="0" x2="82" y2="0" width="0.127" layer="49"/>
+<wire x1="50.5" y1="0" x2="51" y2="0" width="0.127" layer="49"/>
+<wire x1="51" y1="0" x2="57" y2="0" width="0.127" layer="49"/>
+<wire x1="57" y1="0" x2="57.5" y2="0" width="0.127" layer="49"/>
+<wire x1="57.5" y1="0" x2="82" y2="0" width="0.127" layer="49"/>
 <wire x1="82" y1="0" x2="85" y2="3" width="0.127" layer="49" curve="90"/>
 <wire x1="85" y1="3" x2="85" y2="53" width="0.127" layer="49"/>
 <wire x1="85" y1="53" x2="82" y2="56" width="0.127" layer="49" curve="90"/>
@@ -7602,20 +7604,54 @@ For more documentation, please visit http://www.raspberrypi.org/documentation/ha
 <text x="74" y="9" size="1.27" layer="49">USB 2.0</text>
 <text x="9" y="47" size="1.27" layer="49">GPIO</text>
 <wire x1="44.9" y1="22.7" x2="44.9" y2="0.3" width="0.127" layer="49"/>
-<wire x1="44.9" y1="0.3" x2="47.85" y2="0.3" width="0.127" layer="49"/>
-<wire x1="47.85" y1="0.3" x2="47.85" y2="3.7" width="0.127" layer="49"/>
-<wire x1="47.85" y1="3.7" x2="49" y2="4.8" width="0.127" layer="49"/>
-<wire x1="49" y1="4.8" x2="49" y2="18.2" width="0.127" layer="49"/>
-<wire x1="49" y1="18.2" x2="47.85" y2="19.35" width="0.127" layer="49"/>
-<wire x1="47.85" y1="19.35" x2="47.85" y2="22.7" width="0.127" layer="49"/>
-<wire x1="47.85" y1="22.7" x2="44.9" y2="22.7" width="0.127" layer="49"/>
+<wire x1="44.9" y1="0.3" x2="47.9" y2="0.3" width="0.127" layer="49"/>
+<wire x1="47.9" y1="0.3" x2="47.9" y2="3.3" width="0.127" layer="49"/>
+<wire x1="49.3" y1="3.3" x2="49.3" y2="19.7" width="0.127" layer="49"/>
+<wire x1="47.9" y1="19.7" x2="47.9" y2="22.7" width="0.127" layer="49"/>
+<wire x1="47.9" y1="22.7" x2="44.9" y2="22.7" width="0.127" layer="49"/>
 <text x="44" y="24" size="1.27" layer="49">Camera</text>
+<wire x1="50.5" y1="0" x2="50.5" y2="12.5" width="0.127" layer="49"/>
+<wire x1="50.5" y1="12.5" x2="57.5" y2="12.5" width="0.127" layer="49"/>
+<wire x1="57.5" y1="12.5" x2="57.5" y2="0" width="0.127" layer="49"/>
+<wire x1="51" y1="0" x2="51" y2="-2.5" width="0.127" layer="49"/>
+<wire x1="51" y1="-2.5" x2="57" y2="-2.5" width="0.127" layer="49"/>
+<wire x1="57" y1="-2.5" x2="57" y2="0" width="0.127" layer="49"/>
+<text x="51" y="14" size="1.27" layer="49">Audio Port</text>
+<wire x1="36.4" y1="-0.83" x2="36.4" y2="6.52" width="0.127" layer="49"/>
+<wire x1="36.4" y1="6.52" x2="42.6" y2="6.52" width="0.127" layer="49"/>
+<wire x1="42.6" y1="6.52" x2="42.6" y2="-0.83" width="0.127" layer="49"/>
+<wire x1="35.9" y1="-1.43" x2="43.1" y2="-1.43" width="0.127" layer="49"/>
+<wire x1="36.4" y1="-0.83" x2="35.9" y2="-1.43" width="0.127" layer="49"/>
+<wire x1="42.6" y1="-0.83" x2="43.1" y2="-1.43" width="0.127" layer="49"/>
+<wire x1="3" y1="0" x2="50.5" y2="0" width="0.127" layer="49"/>
+<wire x1="22.9" y1="-0.83" x2="22.9" y2="6.52" width="0.127" layer="49"/>
+<wire x1="22.9" y1="6.52" x2="29.1" y2="6.52" width="0.127" layer="49"/>
+<wire x1="29.1" y1="6.52" x2="29.1" y2="-0.83" width="0.127" layer="49"/>
+<wire x1="22.4" y1="-1.43" x2="29.6" y2="-1.43" width="0.127" layer="49"/>
+<wire x1="22.9" y1="-0.83" x2="22.4" y2="-1.43" width="0.127" layer="49"/>
+<wire x1="29.1" y1="-0.83" x2="29.6" y2="-1.43" width="0.127" layer="49"/>
+<text x="29" y="9" size="1.27" layer="49">micro HDMI</text>
+<wire x1="6.875" y1="6.15" x2="6.875" y2="-1.25" width="0.127" layer="49"/>
+<wire x1="6.875" y1="-1.25" x2="15.525" y2="-1.25" width="0.127" layer="49"/>
+<wire x1="15.525" y1="-1.25" x2="15.525" y2="6.15" width="0.127" layer="49"/>
+<wire x1="15.525" y1="6.15" x2="6.875" y2="6.15" width="0.127" layer="49"/>
+<text x="9" y="8" size="1.27" layer="49">USB-C</text>
+<wire x1="2.6" y1="19.8" x2="2.6" y2="16.8" width="0.127" layer="49"/>
+<wire x1="2.6" y1="16.8" x2="5.6" y2="16.8" width="0.127" layer="49"/>
+<wire x1="5.6" y1="16.8" x2="5.6" y2="39.2" width="0.127" layer="49"/>
+<wire x1="5.6" y1="39.2" x2="2.6" y2="39.2" width="0.127" layer="49"/>
+<wire x1="2.6" y1="39.2" x2="2.6" y2="36.2" width="0.127" layer="49"/>
+<wire x1="2.6" y1="36.2" x2="1.2" y2="36.2" width="0.127" layer="49"/>
+<wire x1="1.2" y1="36.2" x2="1.2" y2="19.8" width="0.127" layer="49"/>
+<wire x1="1.2" y1="19.8" x2="2.6" y2="19.8" width="0.127" layer="49"/>
+<wire x1="47.9" y1="19.7" x2="49.3" y2="19.7" width="0.127" layer="49"/>
+<wire x1="47.9" y1="3.3" x2="49.3" y2="3.3" width="0.127" layer="49"/>
+<text x="2" y="41" size="1.27" layer="49">Display</text>
 </package>
 </packages>
 <symbols>
 <symbol name="RPI4">
-<description>Symbol for the Raspberry Pi 2 Single Board Computer created by www.element14.com
-For more documentation, visit http://www.raspberrypi.org/documentation/hardware/raspberrypi/</description>
+<description>Symbol for Raspberry Pi 4 based on Raspberry Pi 40-Pin GPIO Layout and RPi4 features and components</description>
 <pin name="3V3@1" x="10.16" y="71.12" length="short" rot="R90"/>
 <pin name="5V@2" x="10.16" y="99.06" length="short" rot="R270"/>
 <pin name="GPIO2" x="15.24" y="71.12" length="short" rot="R90"/>
@@ -7656,15 +7692,15 @@ For more documentation, visit http://www.raspberrypi.org/documentation/hardware/
 <pin name="GPIO20" x="101.6" y="99.06" length="short" rot="R270"/>
 <pin name="GND@39" x="106.68" y="71.12" length="short" rot="R90"/>
 <pin name="GPIO21" x="106.68" y="99.06" length="short" rot="R270"/>
-<text x="96.52" y="66.04" size="1.778" layer="95">*ID_SD and ID_SC PINS:</text>
-<text x="96.52" y="54.61" size="1.016" layer="95">These pins are reserved for ID EEPROM
+<text x="96.52" y="50.8" size="1.778" layer="95">*ID_SD and ID_SC PINS:</text>
+<text x="96.52" y="39.37" size="1.016" layer="95">These pins are reserved for ID EEPROM
 
 At boot time this I2C interface will be
 interrogated to look for an EEPROM
 that identifies the attached board and
 allows automagic setup of the GPIOs
 (and optionally, Linux drivers).</text>
-<text x="96.52" y="48.26" size="1.016" layer="95" ratio="24" distance="60">DO NOT USE these pins for anything other
+<text x="96.52" y="33.02" size="1.016" layer="95" ratio="24" distance="60">DO NOT USE these pins for anything other
 than attaching an I2C ID EEPROM. Leave
 unconnected if ID EEPROM not required.</text>
 <wire x1="7.62" y1="96.52" x2="109.22" y2="96.52" width="0.254" layer="94" style="shortdash"/>
@@ -7694,7 +7730,36 @@ unconnected if ID EEPROM not required.</text>
 <vertex x="88.9" y="30.48"/>
 <vertex x="88.9" y="35.56"/>
 </polygon>
-<text x="81.28" y="10.16" size="1.778" layer="94" rot="R90">Camera Connector</text>
+<text x="81.28" y="15.24" size="1.778" layer="94" rot="R90">Camera</text>
+<polygon width="0.254" layer="94">
+<vertex x="10.16" y="33.02"/>
+<vertex x="10.16" y="66.04"/>
+<vertex x="5.08" y="66.04"/>
+<vertex x="5.08" y="63.5"/>
+<vertex x="5.08" y="60.96"/>
+<vertex x="2.54" y="60.96"/>
+<vertex x="2.54" y="38.1"/>
+<vertex x="5.08" y="38.1"/>
+<vertex x="5.08" y="33.02"/>
+</polygon>
+<text x="12.7" y="55.88" size="1.778" layer="94" rot="R270">Display</text>
+<rectangle x1="63.5" y1="-2.54" x2="76.2" y2="12.7" layer="94"/>
+<rectangle x1="40.64" y1="-2.54" x2="53.34" y2="12.7" layer="94"/>
+<rectangle x1="12.7" y1="-2.54" x2="27.94" y2="12.7" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="96.52" y="20.32"/>
+<vertex x="96.52" y="0"/>
+<vertex x="99.06" y="0"/>
+<vertex x="99.06" y="-2.54"/>
+<vertex x="106.68" y="-2.54"/>
+<vertex x="106.68" y="0"/>
+<vertex x="109.22" y="0"/>
+<vertex x="109.22" y="20.32"/>
+</polygon>
+<text x="40.64" y="15.24" size="1.778" layer="94">micro HDMI</text>
+<text x="63.5" y="15.24" size="1.778" layer="94">micro HDMI</text>
+<text x="17.78" y="15.24" size="1.778" layer="94">USB-C</text>
+<text x="109.22" y="22.86" size="1.778" layer="94" rot="R180">Audio Port</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8183,6 +8248,10 @@ unconnected if ID EEPROM not required.</text>
 <library name="usb conn">
 <packages>
 <package name="MICRO-USB">
+<description>Footprint for specific microUSB connector. 
+Manufacturer: GCT.
+Manufacturer Product Number: USB3075-30-A.
+Digikey Link: https://www.digikey.com/en/products/detail/gct/USB3075-30-A/9859705</description>
 <smd name="SHLD@1" x="-1.125" y="0" dx="1.9" dy="1.75" layer="1" rot="R90"/>
 <smd name="SHLD@2" x="1.125" y="0" dx="1.9" dy="1.75" layer="1" rot="R90"/>
 <pad name="SHLD@3" x="-3.575" y="0" drill="0.95" diameter="1.6"/>
@@ -8228,6 +8297,7 @@ unconnected if ID EEPROM not required.</text>
 </symbols>
 <devicesets>
 <deviceset name="USB-MICRO">
+<description>Footprint for specific microUSB connector. Manufacturer: GCT. Manufacturer Product Number: USB3075-30-A. Digikey Link: https://www.digikey.com/en/products/detail/gct/USB3075-30-A/9859705</description>
 <gates>
 <gate name="G$1" symbol="USBCONN-ID" x="0" y="0"/>
 </gates>
@@ -8251,32 +8321,29 @@ unconnected if ID EEPROM not required.</text>
 </library>
 <library name="MCR1101">
 <packages>
-<package name="MCR1101">
-<smd name="IP+@4" x="-4.6" y="0.635" dx="2.2" dy="0.7" layer="1"/>
-<smd name="IP+@3" x="-4.6" y="1.905" dx="2.2" dy="0.7" layer="1"/>
-<smd name="IP+@2" x="-4.6" y="3.175" dx="2.2" dy="0.7" layer="1"/>
-<smd name="IP+" x="-4.6" y="4.445" dx="2.2" dy="0.7" layer="1"/>
-<smd name="IP-" x="-4.6" y="-0.635" dx="2.2" dy="0.7" layer="1"/>
-<smd name="IP-@2" x="-4.6" y="-1.905" dx="2.2" dy="0.7" layer="1"/>
-<smd name="IP-@3" x="-4.6" y="-3.175" dx="2.2" dy="0.7" layer="1"/>
-<smd name="IP-@4" x="-4.6" y="-4.445" dx="2.2" dy="0.7" layer="1"/>
-<smd name="VCAP" x="4.6" y="0.635" dx="2.2" dy="0.7" layer="1"/>
-<smd name="GND@2" x="4.6" y="1.905" dx="2.2" dy="0.7" layer="1"/>
-<smd name="GND@3" x="4.6" y="3.175" dx="2.2" dy="0.7" layer="1"/>
-<smd name="VOC" x="4.6" y="4.445" dx="2.2" dy="0.7" layer="1"/>
-<smd name="VOUT" x="4.6" y="-0.635" dx="2.2" dy="0.7" layer="1"/>
-<smd name="GND" x="4.6" y="-1.905" dx="2.2" dy="0.7" layer="1"/>
-<smd name="VCC" x="4.6" y="-3.175" dx="2.2" dy="0.7" layer="1"/>
-<smd name="!FAULTB" x="4.6" y="-4.445" dx="2.2" dy="0.7" layer="1"/>
+<package name="SOIC-16">
+<smd name="4" x="-4.6" y="0.635" dx="2.2" dy="0.7" layer="1"/>
+<smd name="3" x="-4.6" y="1.905" dx="2.2" dy="0.7" layer="1"/>
+<smd name="2" x="-4.6" y="3.175" dx="2.2" dy="0.7" layer="1"/>
+<smd name="1" x="-4.6" y="4.445" dx="2.2" dy="0.7" layer="1"/>
+<smd name="5" x="-4.6" y="-0.635" dx="2.2" dy="0.7" layer="1"/>
+<smd name="6" x="-4.6" y="-1.905" dx="2.2" dy="0.7" layer="1"/>
+<smd name="7" x="-4.6" y="-3.175" dx="2.2" dy="0.7" layer="1"/>
+<smd name="8" x="-4.6" y="-4.445" dx="2.2" dy="0.7" layer="1"/>
+<smd name="13" x="4.6" y="0.635" dx="2.2" dy="0.7" layer="1"/>
+<smd name="14" x="4.6" y="1.905" dx="2.2" dy="0.7" layer="1"/>
+<smd name="15" x="4.6" y="3.175" dx="2.2" dy="0.7" layer="1"/>
+<smd name="16" x="4.6" y="4.445" dx="2.2" dy="0.7" layer="1"/>
+<smd name="12" x="4.6" y="-0.635" dx="2.2" dy="0.7" layer="1"/>
+<smd name="11" x="4.6" y="-1.905" dx="2.2" dy="0.7" layer="1"/>
+<smd name="10" x="4.6" y="-3.175" dx="2.2" dy="0.7" layer="1"/>
+<smd name="9" x="4.6" y="-4.445" dx="2.2" dy="0.7" layer="1"/>
 <wire x1="-4.5" y1="6" x2="-4.5" y2="-6" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="-6" x2="4.5" y2="-6" width="0.127" layer="21"/>
 <wire x1="4.5" y1="-6" x2="4.5" y2="6" width="0.127" layer="21"/>
 <wire x1="4.5" y1="6" x2="-4.5" y2="6" width="0.127" layer="21"/>
 <text x="-4.5" y="6.4" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-4.4" y="-7.1" size="0.8128" layer="27">&gt;VALUE</text>
-<text x="-2.4" y="0.338" size="0.8128" layer="49">MCR1101
-Current
-Sensor</text>
 <circle x="-2.54" y="4.826" radius="0.71841875" width="0.127" layer="21"/>
 </package>
 </packages>
@@ -8304,16 +8371,16 @@ Sensor</text>
 <gate name="G$1" symbol="MCR1101" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MCR1101">
+<device name="" package="SOIC-16">
 <connects>
-<connect gate="G$1" pin="!FAULTB" pad="!FAULTB"/>
-<connect gate="G$1" pin="GND" pad="GND GND@2 GND@3"/>
-<connect gate="G$1" pin="IP+" pad="IP+ IP+@2 IP+@3 IP+@4"/>
-<connect gate="G$1" pin="IP-" pad="IP- IP-@2 IP-@3 IP-@4"/>
-<connect gate="G$1" pin="VCAP" pad="VCAP"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-<connect gate="G$1" pin="VOC" pad="VOC"/>
-<connect gate="G$1" pin="VOUT" pad="VOUT"/>
+<connect gate="G$1" pin="!FAULTB" pad="9"/>
+<connect gate="G$1" pin="GND" pad="11 14 15"/>
+<connect gate="G$1" pin="IP+" pad="1 2 3 4"/>
+<connect gate="G$1" pin="IP-" pad="5 6 7 8"/>
+<connect gate="G$1" pin="VCAP" pad="13"/>
+<connect gate="G$1" pin="VCC" pad="10"/>
+<connect gate="G$1" pin="VOC" pad="16"/>
+<connect gate="G$1" pin="VOUT" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9255,8 +9322,8 @@ to change address from
 <instance part="GND44" gate="1" x="7.62" y="99.06" smashed="yes" rot="R270">
 <attribute name="VALUE" x="5.08" y="101.6" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND45" gate="1" x="81.28" y="114.3" smashed="yes" rot="R90">
-<attribute name="VALUE" x="83.82" y="111.76" size="1.778" layer="96" rot="R90"/>
+<instance part="GND45" gate="1" x="66.04" y="114.3" smashed="yes" rot="R90">
+<attribute name="VALUE" x="68.58" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND46" gate="1" x="66.04" y="78.74" smashed="yes" rot="R90">
 <attribute name="VALUE" x="68.58" y="76.2" size="1.778" layer="96" rot="R90"/>
@@ -9366,7 +9433,7 @@ to change address from
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="GND@39"/>
-<wire x1="53.34" y1="114.3" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="114.3" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND45" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9700,9 +9767,9 @@ to change address from
 </net>
 <net name="INT" class="0">
 <segment>
-<label x="78.74" y="109.22" size="1.778" layer="95" xref="yes"/>
+<label x="58.42" y="109.22" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$8" gate="G$1" pin="GPIO26"/>
-<wire x1="53.34" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="109.22" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PI_POWER" class="0">
@@ -9789,9 +9856,9 @@ to change address from
 </net>
 <net name="RX0_INT" class="0">
 <segment>
-<label x="76.2" y="104.14" size="1.778" layer="95" xref="yes"/>
+<label x="58.42" y="104.14" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$8" gate="G$1" pin="GPIO19"/>
-<wire x1="53.34" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX1_INT" class="0">
