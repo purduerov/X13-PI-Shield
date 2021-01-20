@@ -8653,7 +8653,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="40.64" y="58.42" size="1.778" layer="91">Oscillator</text>
+<text x="40.64" y="58.42" size="1.778" layer="91">Oscillator
+ECS-80-18-4X</text>
 <text x="203.2" y="149.86" size="1.778" layer="91">CAN Termination</text>
 <text x="213.36" y="88.9" size="1.778" layer="91">CAN to MiniROV Connectors</text>
 <text x="177.8" y="55.88" size="1.778" layer="91">NMOS</text>
@@ -8662,6 +8663,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="109.22" y="127" size="1.778" layer="91">Pull S pin high for silent mode
 Silent mode is unwanted
 Do not populate R3</text>
+<text x="147.32" y="91.44" size="1.778" layer="91">LED turns on when CAN Tranceiver detects a fault</text>
 </plain>
 <instances>
 <instance part="Y1" gate="G$1" x="20.32" y="48.26" smashed="yes" rot="R180">
@@ -9184,11 +9186,15 @@ Do not populate R3</text>
 <text x="226.06" y="76.2" size="1.778" layer="91">Possible Additional Sensor</text>
 <text x="129.54" y="27.94" size="1.778" layer="91">UART Communication Header Pins</text>
 <text x="210.82" y="68.58" size="1.778" layer="91">Servo Connector</text>
-<text x="223.52" y="121.92" size="1.778" layer="91">Only pull ADR high if wanting
+<text x="228.6" y="116.84" size="1.778" layer="91">Only pull ADR high if wanting
 to change address from
-0x28 to 0x29</text>
+0x28 to 0x29;
+use 0Ohm to do so, as breakout board
+has a pull down resistor</text>
 <text x="132.08" y="162.56" size="1.778" layer="91">Use same decoupling cap as BNO055</text>
 <text x="175.26" y="134.62" size="1.778" layer="91">I2C Pull-up Resistors</text>
+<text x="172.72" y="50.8" size="1.778" layer="91">Note: Same CS as connected to 
+CAN Controller MCP2515</text>
 </plain>
 <instances>
 <instance part="J4" gate="G$1" x="182.88" y="38.1" smashed="yes">
@@ -9897,16 +9903,29 @@ to change address from
 <text x="25.4" y="121.92" size="1.778" layer="91">Additional Analog Input Sensor</text>
 <text x="213.36" y="73.66" size="1.778" layer="91">3.3V Header Connectors</text>
 <text x="185.42" y="68.58" size="1.778" layer="91">PMOS</text>
-<text x="170.18" y="86.36" size="1.778" layer="91">LED on when Current Sensor Fault</text>
-<text x="218.44" y="149.86" size="1.778" layer="91">Logic Level Shifters</text>
+<text x="170.18" y="86.36" size="1.778" layer="91">LED on when Overcurrent Detection</text>
+<text x="220.98" y="147.32" size="1.778" layer="91">NMOS used for Logic Level Shifting
+Note: 2 NMOS for each 
+Open Drain Driver (SDA, SCL)</text>
 <text x="40.64" y="160.02" size="1.778" layer="91">Linear Regulator</text>
-<text x="20.32" y="73.66" size="1.778" layer="91">0Ohm Resistor if
-no current sensor is used</text>
+<text x="15.24" y="73.66" size="1.778" layer="91">Do NOT solder this 0Ohm resistor
+unless current sensor is not soldered;
+used to bypass current sensor</text>
 <text x="83.82" y="109.22" size="1.778" layer="91">Current Sensor</text>
 <text x="81.28" y="63.5" size="1.778" layer="91">Circuit to Reset
 Overcurrent Fault</text>
 <text x="73.66" y="111.76" size="1.778" layer="91">Need to replace the sensor sensor with one in stock</text>
 <text x="129.54" y="162.56" size="1.778" layer="91">Should replace the ADC with a cheaper one</text>
+<text x="66.04" y="160.02" size="1.778" layer="91">Obsolete Product
+Needs to be replaced</text>
+<text x="7.62" y="43.18" size="1.778" layer="91">Power Indicator LEDs</text>
+<text x="68.58" y="43.18" size="1.778" layer="91">VOC Pin on MCR1101 determines current
+level in which fault is detected.
+Voltage Division with Resistors:
+V_OCD = (1/11)(5V), so
+0V &lt; V_OCD &lt; .225(VCC) and
+overcurrent fault occurs at &gt;= 6A</text>
+<text x="124.46" y="35.56" size="1.778" layer="91">Digital Output on Pi</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="127" y="144.78" smashed="yes">
